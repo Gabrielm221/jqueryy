@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/lib/jquery-3.7.0.min.js"></script>
+    <script src="scripts/global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="princ">Atividades</h1>
+    <ul>
+        <p>Selecione o exercicio que você gostaria de fazer</p>
+        <li><a href="#exercicio1">Exercicio 1</a></li>
+        <li><a href="#exercicio2">Exercicio 2</a></li>
+        <li><a href="#exercicio3">Exercicio 3</a></li>
+        <li><a href="#exercicio4">Exercicio 4</a></li>
+        <li><a href="#exercicio5">Exercicio 5</a></li>
+    </ul>
+
+    <section class="section-exercicio">
+        <h3 id="exercicio1">Exercício 1</h3>
+        <p id="jquery1">Clique no botão abaixo para alterar o texto</p>
+        <button onclick="Altera_text()">Clique para alterar</button>
+    </section>
+
+    <section class="section-exercicio">
+        <h3 id="exercicio2">Exercício 2</h3>
+        <p id="jquery2">Gabriel Marçal Pereira Leal</p>
+        <button onclick="Altera_vis()">Clique para alterar</button>
+    </section>
+
+    <section class="section-exercicio">
+        <h3 id="exercicio3">Exercício 3</h3>
+        <ul id="menu-acordeon">
+            <li>
+                Frutas que eu gosto
+                <ul class="sublista">
+                    <li>Abacaxi</li>
+                    <li>Maçã</li>
+                    <li>Kiwi</li>
+                </ul>
+            </li>
+            <li>
+                Meus jogos favoritos
+                <ul class="sublista">
+                    <li>Valorant</li>
+                    <li>Elden Ring</li>
+                    <li>Resident Evil 4 remake</li>
+                </ul>
+            </li>
+            <li>
+                Bla bla
+                <ul class="sublista">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-exercicio">
+        <h3 id="exercicio4">Exercício 4</h3>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="user_name">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="user_endere">
+            <p id="error-message" style="color: red;"></p>
+            <button type="button" id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <section class="section-exercicio">
+        <h3 id="exercicio5">Exercício 5</h3>
+        <div id="galeria">
+            <img src="imagens/imagem1.jpg" alt="Imagem 1" class="imagem">
+            <img src="imagens/imagem2.jpg" alt="Imagem 2" class="imagem">
+            <img src="imagens/imagem3.jpg" alt="Imagem 3" class="imagem">
+            <img src="imagens/imagem4.jpg" alt="Imagem 4" class="imagem">
+            <img src="imagens/imagem5.jpg" alt="Imagem 5" class="imagem">
+        </div>
+        <div id="botoes">
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Próximo</button>
+        </div>
+    </section>
+</body>
+</html>
